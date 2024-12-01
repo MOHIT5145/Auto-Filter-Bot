@@ -124,11 +124,11 @@ if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
 else:
-    if URL.startswith(('https://t.me/+WV6v5sfF5OM0OWU1')):
+    if URL.startswith(('https://t.me/NJMKNJJJ')):
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
-        URL = f'http://{URL}/'
+        URL = f'https://t.me/NJMKNJJJ/'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
