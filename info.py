@@ -112,7 +112,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', '9060301534 msg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '9060301534msg')
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', False)
+IS_STREAM = is_enabled('IS_STREAM', True)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002471849392")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
@@ -124,8 +124,8 @@ if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
 else:
-    if URL.startswith(('https://t.me/NJMKNJJJ')):
-        if not URL.endswith("/"):
+    if URL.startswith(('https://t.me/NJMKNJJJ/')):
+        if not URL.endswith("https://t.me/NJMKNJJJ/"):
             URL += '/'
     elif is_valid_ip(URL):
         URL = f'https://t.me/NJMKNJJJ/'
